@@ -53,38 +53,26 @@ export const SidebarLink = styled(LinkS)`
   font-size: 1.5rem;
   text-decoration: none;
   list-style: none;
-  transition: 0.2s ease-in-out;
-  text-decoration: none;
-  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 10px;
   cursor: pointer;
-
+  color: #0000;
+  text-shadow: 0 0 #fff, 0 0 #0000;
+  overflow: hidden;
+  transition: 0.3s;
+  &.active {
+    border-bottom: 2px solid #d77e54;
+    box-shadow: 0px -8px 8px -7px #d77e54 inset;
+    color: #d77e54;
+    text-shadow: 0 0 black;
+  }
   &:hover {
-    color: #b67c37;
-    transition: 0.2s ease-in-out;
+    text-shadow: 0 -1.2em #0000, 0 0 #d77e54;
   }
 `;
 
 export const SideBtnWrap = styled.div`
   display: flex;
   justify-content: center;
-`;
-
-export const SidebarRoute = styled.button`
-  border-radius: 50px;
-  background: #b67c37;
-  white-space: nowrap;
-  padding: 16px 64px;
-  color: #010606;
-  font-size: 16px;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  text-decoration: none;
-
-  &:hover {
-    transition: all 0.2s ease-in-out;
-    background: #fff;
-    color: #010606;
-  }
 `;

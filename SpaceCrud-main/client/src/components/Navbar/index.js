@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import { FaBars, FaPenNib } from 'react-icons/fa';
+import { FaBars } from 'react-icons/fa';
 import { animateScroll as scroll } from 'react-scroll';
-import logo from '../../images/logo.svg';
-import pdf from '../../assets/CV.pdf';
+import logo from '../../images/logo-space-y.svg';
 import {
     Nav,
     NavbarContainer,
@@ -10,9 +9,7 @@ import {
     MobileIcon,
     NavMenu,
     NavItem,
-    NavLinks,
-    NavBtn,
-    NavBtnLink
+    NavLinks
 } from './NavbarElements'
 
 const Navbar = ({toggle}) => {
@@ -46,21 +43,18 @@ const Navbar = ({toggle}) => {
           </MobileIcon>
           <NavMenu>
             <NavItem >
-              <NavLinks to="about" smooth={true} duration={500} spy={true}  exact='true' offset={30} >Sobre</NavLinks>
+              <NavLinks to="planets" smooth={true} duration={500} spy={true}  exact='true' offset={-80} >Planets</NavLinks>
             </NavItem>
             <NavItem >
-              <NavLinks to="discover" smooth={true} duration={500} spy={true}  exact='true' offset={30} >Descubra</NavLinks>
+              <NavLinks to="spaceships" smooth={true} duration={500} spy={true}  exact='true' offset={-80} >SpaceShips</NavLinks>
             </NavItem>
             <NavItem >
-              <NavLinks to="services" smooth={true} duration={500} spy={true}  exact='true' offset={30} >Projetos</NavLinks>
+              <NavLinks to="crew" smooth={true} duration={500} spy={true}  exact='true' offset={-80} >Crew members</NavLinks>
             </NavItem>
             <NavItem >
-              <NavLinks to="signup" smooth={true} duration={500} spy={true}  exact='true' offset={30} >Entre em Contato</NavLinks>
+              <NavLinks to="me" smooth={true} duration={500} spy={true}  exact='true' offset={-80} >Credits</NavLinks>
             </NavItem>
           </NavMenu>
-          <NavBtn>
-            <NavBtnLink onClick={()=> window.open(pdf)}> <span>Curriculum</span> <FaPenNib /></NavBtnLink>
-          </NavBtn>
         </NavbarContainer>
       </Nav>
     </>

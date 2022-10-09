@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import Video from '../../videos/3.mp4';
-import {Button} from '../ButtonElements';
 import { 
   HeroContainer,
   HeroBg,
@@ -26,14 +25,11 @@ const HeroSection = () => {
         <VideoBg autoPlay loop muted src={Video} type='video/mp4'/>
       </HeroBg>
       <HeroContent>
-        <HeroH1>Bem-vindo!</HeroH1>
+        <HeroH1>Welcome Aboard</HeroH1>
         <HeroP>
-          Este é um de meus sites de exemplo, onde eu falo sobre alguns projetos que eu faço.
+          Join us on a space adventure while administering your own ships and crew.
         </HeroP>
         <HeroBtnWrapper>
-          <Button to='about' smooth={true} duration={500} spy={true} exact='true' offset={30} onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='true'>
-            Começar {hover ?  <ArrowRight /> : <ArrowForward />  }
-          </Button>
         </HeroBtnWrapper>
       </HeroContent>
     </HeroContainer>

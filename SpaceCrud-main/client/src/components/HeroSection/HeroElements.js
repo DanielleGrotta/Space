@@ -39,6 +39,7 @@ export const VideoBg = styled.video`
   width: 100%;
   height: 100%;
   background: #000;
+  object-fit: cover;
 `;
 
 export const HeroContent = styled.div`
@@ -52,10 +53,11 @@ export const HeroContent = styled.div`
 `;
 
 export const HeroH1 = styled.h1`
-  color: #fff;
-  font-size: 48px;
+  color: #d77e54;
+  font-size: 30px;
   text-align: center;
-
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
 
   @media (max-width: 768px) {
     font-size: 40px;

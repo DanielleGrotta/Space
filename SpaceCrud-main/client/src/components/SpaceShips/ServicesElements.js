@@ -85,13 +85,28 @@ export const ServicesIcon = styled.img`
 `;
 
 export const ServicesH1 = styled.h1`
-  font-size: 2.5rem;
-  color: #fff;
-  margin-bottom:64px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 30%;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-size: 20px;
+  cursor: pointer;
+  color: #0000;
+  text-shadow: 0 0 #fff, 0 0 #0000;
+  overflow: hidden;
+  transition: 0.3s;
   position: relative;
-
-  @media screen and (max-width: 480px) {
-    font-size: 2rem;
+  &.active {
+    border-bottom: 2px solid #d77e54;
+    box-shadow: 0px -8px 8px -7px #d77e54 inset;
+    color: #d77e54;
+    text-shadow: 0 0 black;
+  }
+  &:hover {
+    text-shadow: 0 -1.2em #0000, 0 0 #d77e54;
   }
 `;
 
@@ -109,4 +124,12 @@ export const ServicesP = styled.p`
   text-align: center;
   position: relative;
   color: #fff;
+`;
+
+export const WrappButton = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 2rem;
 `;

@@ -3,8 +3,10 @@ import Sidebar from '../components/Sidebar';
 import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
 import Footer from '../components/Footer';
-import Services from '../components/Services';
+import Credits from '../components/Credits';
 import SpaceShip from '../components/SpaceShips';
+import Astronauts from '../components/Astronauts';
+import Planets from '../components/Planets';
 
 const Home = () => {
 
@@ -20,8 +22,10 @@ const Home = () => {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <HeroSection />
+      <Planets />
       <SpaceShip />
-      <Services />
+      <Astronauts />
+      <Credits />
       <Footer />
     </>
   )

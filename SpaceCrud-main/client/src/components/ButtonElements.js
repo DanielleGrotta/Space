@@ -1,13 +1,12 @@
 import styled from 'styled-components';
-import {Link} from 'react-scroll';
 
-export const Button = styled(Link)`
+export const Button = styled.button`
   border-radius: 50px;
-  background: ${({primary}) => (primary ? '#b67c37' : '#3f3d56')};
+  background: #7e4e37;
   white-space: nowrap;
-  padding: ${({big}) => (big ? '14px 48px' : '12px 38px')};
-  color: ${({dark}) => (dark ? '#010606' : '#fff')};
-  font-size: ${({fontBig}) => (fontBig ? '20px' : '16px')};
+  padding: 14px 48px;
+  color: #fff;
+  font-size: 15px;
   outline: none;
   border: none;
   cursor: pointer;
@@ -15,9 +14,14 @@ export const Button = styled(Link)`
   justify-content: center;
   align-items: center;
   transition: all 0.2s ease-in-out;
+  height: 50px;
+  width: 200px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    background: ${({primary}) => (primary ? '#fff' : '#b67c37')};
+    background: #d77e54;
   }
 `;

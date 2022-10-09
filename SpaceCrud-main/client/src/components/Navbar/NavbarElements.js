@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Link as LinkS } from 'react-scroll';
 
 export const Nav = styled.nav`
-  background-color: ${({scrollNav}) => (scrollNav ? '#000' : 'transparent')};
+  background-color: ${({scrollNav}) => (scrollNav ? '#00000036' : 'transparent')};
   height: 80px;
   margin-top: -80px;
   display: flex;
@@ -12,6 +12,7 @@ export const Nav = styled.nav`
   top: 0;
   z-index: 10;
   font-size: 1rem;
+  backdrop-filter: ${({scrollNav}) => (scrollNav ? 'blur(10px)' : 'none')};
 
 
   @media screen and (max-width: 768px) {
@@ -38,8 +39,8 @@ export const NavLogo = styled.img`
   margin-left: 24px;
   font-weight: bold;
   text-decoration: none;
-  height: 7rem;
-  margin-top: -1rem;
+  height: 2rem;
+  margin-top: 1.5rem;
 `;
 
 export const MobileIcon = styled.div`
@@ -74,45 +75,26 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(LinkS)`
-  color: #fff;
   display: flex;
   align-items: center;
   text-decoration: none;
   padding: 0 1rem;
   height: 100%;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 10px;
   cursor: pointer;
-
+  color: #0000;
+  text-shadow: 0 0 #fff, 0 0 #0000;
+  overflow: hidden;
+  transition: 0.3s;
   &.active {
-    border-bottom: 2px solid #b67c37;
-    box-shadow: 0px -8px 8px -7px #cd893899 inset;
+    border-bottom: 2px solid #d77e54;
+    box-shadow: 0px -8px 8px -7px #d77e54 inset;
+    color: #d77e54;
+    text-shadow: 0 0 black;
   }
-`;
-
-export const NavBtn = styled.nav`
-  display: flex;
-  align-items: center;
-
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
-`;
-
-export const NavBtnLink = styled.button`
-  border-radius: 50px;
-  background-color: #b67c37;
-  white-space: nowrap;
-  padding: 10px 22px;
-  color: #010606;
-  font-size: 16px;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  text-decoration: none;
-
   &:hover {
-    transition: all 0.2s ease-in-out;
-    background: #fff;
-    color: #b67c37;
+    text-shadow: 0 -1.2em #0000, 0 0 #d77e54;
   }
 `;
