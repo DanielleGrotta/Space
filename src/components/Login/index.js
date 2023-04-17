@@ -28,11 +28,8 @@ const LoginSignUpForm = () => {
   }
 
   const Gotohome = () => {
-    window.location.href = '/home';
+    window.location.href = "/home";
   }
-
-
-
 
   return (
     <>
