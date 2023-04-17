@@ -1,5 +1,4 @@
 import React from 'react';
-import { FaPenNib } from 'react-icons/fa';
 import { SidebarContainer,Icon,CloseIcon,SidebarWrapper,SidebarMenu,SidebarLink,SideBtnWrap } from './SidebarElements'
 
 const Sidebar = ({isOpen, toggle}) => {

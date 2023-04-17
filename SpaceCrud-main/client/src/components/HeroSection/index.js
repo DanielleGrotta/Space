@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Video from '../../videos/3.mp4';
 import { 
   HeroContainer,
@@ -8,16 +8,10 @@ import {
   HeroH1,
   HeroP,
   HeroBtnWrapper,
-  ArrowForward,
-  ArrowRight
   } from './HeroElements';
 
 const HeroSection = () => {
-  const [hover, setHover] = useState(false);
 
-  const onHover = () => {
-    setHover(!hover);
-  }
 
   return (
     <HeroContainer id='home'>
